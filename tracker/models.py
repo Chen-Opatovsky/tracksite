@@ -111,6 +111,37 @@ class Sighting(models.Model):
             help_text=_=("Other activity"),
     )
 
+    kuks = models.BooleanField(
+            default=True,
+    )
+
+    quaas = models.BooleanField(
+            default=True,
+    )
+
+    moans = models.BooleanField(
+            default=True,
+    )
+
+    tail_flags = models.BooleanField(
+            default=True,
+    )
+
+    tail_twitches = models.BooleanField(
+            default=True,
+    )
+
+    approaches = models.BooleanField(
+            default=True,
+    )
+
+    indifferent = models.BooleanField(
+            default=True,
+    )
+
+    runs_from = models.BooleanField(
+            default=True,
+    )
 
 
 
