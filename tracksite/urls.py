@@ -19,7 +19,8 @@ from django.urls import path
 from tracker import views
 
 urlpatterns = [
-    path('sightings/',views.all_sightings),
+    path('sightings/add/', views.sighting_create, name='sighting_create'),
+    path('sightings/<slug:pk>/', views.sighting_update, name='sighting_update'),
+    path('sightings/',views.sighting_list, name='sighting_list'),
     path('admin/', admin.site.urls),
-    path('sightings/add/',views.add_sighting),
 ]
