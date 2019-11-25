@@ -63,6 +63,21 @@ class Sighting(models.Model):
             max_length=10,
             choices=FUR_CHOICES,
             default=GRAY,
-            help_text=_("Fur color of Squirrel")
-    
+            help_text=_("Fur color of Squirrel"),
+    )
+
+    GROUND_PLANE="ground_plane"
+    ABOVE_GROUND="above_ground"
+
+    LOC_CHOICES=(
+        (GROUND_PLANE,"Ground_Plane"),
+        (ABOVE_GROUND,"Above_Ground"),
+    )
+
+    location = models.CharField(
+            max_length=20,
+            choices=LOC_CHOICES,
+            default=GROUND_PLANE,
+            help_text=_("Location of Squirrel"),
+    )
 
