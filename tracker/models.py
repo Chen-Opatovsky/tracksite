@@ -108,7 +108,7 @@ class Sighting(models.Model):
 
     other_activities = models.CharField(
             max_length=20,
-            help_text=_=("Other activity"),
+            help_text=_("Other activity"),
     )
 
     kuks = models.BooleanField(
