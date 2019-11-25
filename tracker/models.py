@@ -49,3 +49,20 @@ class Sighting(models.Model):
             help_text=_("Age of Squirrel"),
     )
 
+    GRAY="gray"
+    BLACK="black"
+    CINNAMON="Cinnamon"
+    
+    FUR_CHOICES=(
+            (GRAY,"Gray"),
+            (BLACK,"Black"),
+            (CINNAMON,"Cinnamon"),
+    )
+
+    fur_color = models.CharField(
+            max_length=10,
+            choices=FUR_CHOICES,
+            default=GRAY,
+            help_text=_("Fur color of Squirrel")
+    
+
