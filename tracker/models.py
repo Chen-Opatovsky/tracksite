@@ -80,4 +80,39 @@ class Sighting(models.Model):
             default=GROUND_PLANE,
             help_text=_("Location of Squirrel"),
     )
+    
+    specific_location = models.CharField(
+            max_length=20,
+            help_text=_("Specific location of Squirrel"),
+    )
+
+    running = models.BooleanField(
+            default=True,
+    )
+
+    chasing = models.BooleanField(
+            default=True,
+    )
+
+    climbing = models.BooleanField(
+            default=True,
+    )
+
+    eating = models.BooleanField(
+            default=True,
+    )
+
+    foraging = models.BooleanField(
+            default=True,
+    )
+
+    other_activities = models.CharField(
+            max_length=20,
+            help_text=_=("Other activity"),
+    )
+
+
+
+
+    
 
