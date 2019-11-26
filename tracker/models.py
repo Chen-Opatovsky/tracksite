@@ -49,3 +49,101 @@ class Sighting(models.Model):
             help_text=_("Age of Squirrel"),
     )
 
+    GRAY="gray"
+    BLACK="black"
+    CINNAMON="Cinnamon"
+    
+    FUR_CHOICES=(
+            (GRAY,"Gray"),
+            (BLACK,"Black"),
+            (CINNAMON,"Cinnamon"),
+    )
+
+    fur_color = models.CharField(
+            max_length=10,
+            choices=FUR_CHOICES,
+            default=GRAY,
+            help_text=_("Fur color of Squirrel"),
+    )
+
+    GROUND_PLANE="ground_plane"
+    ABOVE_GROUND="above_ground"
+
+    LOC_CHOICES=(
+        (GROUND_PLANE,"Ground_Plane"),
+        (ABOVE_GROUND,"Above_Ground"),
+    )
+
+    location = models.CharField(
+            max_length=20,
+            choices=LOC_CHOICES,
+            default=GROUND_PLANE,
+            help_text=_("Location of Squirrel"),
+    )
+    
+    specific_location = models.CharField(
+            max_length=20,
+            help_text=_("Specific location of Squirrel"),
+    )
+
+    running = models.BooleanField(
+            default=True,
+    )
+
+    chasing = models.BooleanField(
+            default=True,
+    )
+
+    climbing = models.BooleanField(
+            default=True,
+    )
+
+    eating = models.BooleanField(
+            default=True,
+    )
+
+    foraging = models.BooleanField(
+            default=True,
+    )
+
+    other_activities = models.CharField(
+            max_length=20,
+            help_text=_("Other activity"),
+    )
+
+    kuks = models.BooleanField(
+            default=True,
+    )
+
+    quaas = models.BooleanField(
+            default=True,
+    )
+
+    moans = models.BooleanField(
+            default=True,
+    )
+
+    tail_flags = models.BooleanField(
+            default=True,
+    )
+
+    tail_twitches = models.BooleanField(
+            default=True,
+    )
+
+    approaches = models.BooleanField(
+            default=True,
+    )
+
+    indifferent = models.BooleanField(
+            default=True,
+    )
+
+    runs_from = models.BooleanField(
+            default=True,
+    )
+
+
+
+    
+
