@@ -43,6 +43,7 @@ class Sighting(models.Model):
     AGE_CHOICES =(
 	    (ADULT,"Adult"),
 	    (JUVENILE,"Juvenile"),
+            ('',''),
     )
 	
     age = models.CharField(
@@ -78,6 +79,7 @@ class Sighting(models.Model):
     LOC_CHOICES=(
 	    (GROUND_PLANE,"Ground_Plane"),
 	    (ABOVE_GROUND,"Above_Ground"),
+            ('',''),
     )
 	
     location = models.CharField(
@@ -92,6 +94,7 @@ class Sighting(models.Model):
 	    max_length=20,
 	    help_text=_("Specific location of Squirrel"),
 	    null=True,
+            blank=True,
     )
 	
     running = models.BooleanField(
@@ -118,6 +121,7 @@ class Sighting(models.Model):
 	    max_length=20,
 	    help_text=_("Other activity"),
 	    null=True,
+            blank=True,
     )
 	
     kuks = models.BooleanField(
