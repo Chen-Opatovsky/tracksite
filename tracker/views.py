@@ -25,7 +25,7 @@ def sighting_list(request, template_name='tracker/all.html'):
     }
     return render(request, template_name, context)
 
-def sighting_create(request, template_name='tracker/sighting_form.html'):
+def sighting_add(request, template_name='tracker/sighting_form.html'):
     form = SightingForm(request.POST or None)
     if form.is_valid():
         form.save()
