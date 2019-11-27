@@ -47,3 +47,5 @@ def sighting_delete(request, pk, template_name='tracker/sighting_confirm_delete.
         return redirect('sighting_list')
     return render(request, template_name, {'object':sighting})
 
+
+
