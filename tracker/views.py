@@ -6,13 +6,6 @@ from django.forms import ModelForm
 
 from .models import Sighting
 
-def all_sightings(request):
-    sightings = Sighting.objects.all()
-    context = {
-            'sightings': sightings,
-    }
-    return render(request, 'tracker/all.html', context)
-
 class SightingForm(ModelForm):
     class Meta:
         model = Sighting
@@ -20,6 +13,13 @@ class SightingForm(ModelForm):
 
 def sighting_list(request, template_name='tracker/all.html'):
     sightings = Sighting.objects.all()
+    context = {
+            'sightings' : sightings,
+    }
+    return render(request, template_name, context)
+
+def sighting_map(request, template_name='tracker/map.html'):
+    sightings = Sighting.objects.all()[:100]
     context = {
             'sightings' : sightings,
     }
