@@ -25,7 +25,7 @@ def sighting_map(request, template_name='tracker/map.html'):
     }
     return render(request, template_name, context)
 
-def sighting_add(request, template_name='tracker/sighting_form.html'):
+def sighting_add(request, template_name='tracker/add.html'):
     form = SightingForm(request.POST or None)
     if form.is_valid():
         form.save()
@@ -35,15 +35,13 @@ def sighting_add(request, template_name='tracker/sighting_form.html'):
 def sighting_update(request, pk, template_name='tracker/sighting_form.html'):
     sighting = get_object_or_404(Sighting, pk=pk)
     form = SightingForm(request.POST or None, instance=sighting)
-    if form.is_valid():
-        form.save()
+    if request.method=='POST' and 'update' in request.POST:
+        if form.is_valid():
+            form.save()
+            return redirect('sighting_list')
+    if request.method=='POST' and 'delete' in request.POST:
+        sighting.delete()
         return redirect('sighting_list')
     return render(request, template_name, {'form':form})
 
-def sighting_delete(request, pk, template_name='tracker/sighting_confirm_delete.html'):
-    sighting = get_object_or_404(Sighting, pk=pk)
-    if request.method=='POST':
-        sighting.delete()
-        return redirect('sighting_list')
-    return render(request, template_name, {'object':sighting})
 

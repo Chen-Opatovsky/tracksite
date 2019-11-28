@@ -8,22 +8,23 @@
   </head>
 
   <body>
-    <h1> Sightings </h1>
-    <table border="1">
+    <h1 class="display-4"> Sightings </h1>
+    <table class="table table-striped">
+      <thead class="thead-light">
         <tr>
-        <th>Squirrel ID</th>
-        <th>Date</th>
-        <th>Update</th>
+          <th scope="col">Squirrel ID</th>
+          <th scope="col">Date</th>
+          <th scope="col">Update</th>
         </tr>
         {% for sighting in sightings %}
-        <tr>    
-        <td> {{ sighting.squirrel_id }} </td>
-        <td> {{ sighting.date }} </td>
-        <td> <a href="{% url "sighting_update" sighting.squirrel_id %}">update</a></td>
+        <tr>
+          <td> {{ sighting.squirrel_id }} </td>
+          <td> {{ sighting.date }} </td>
+          <td> <a href="{% url "sighting_update" sighting.squirrel_id %}" class="badge badge-primary">update</a></td>
         </tr>
         {% endfor %}
     </table>
-    <a href="{% url "sighting_add" %}">add a new sighting</a>
+    <a href="{% url "sighting_add" %}" class="btn btn-success">add a new sighting</a>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
