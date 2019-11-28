@@ -45,3 +45,5 @@ def sighting_update(request, pk, template_name='tracker/sighting_form.html'):
     return render(request, template_name, {'form':form})
 
 
+
+
