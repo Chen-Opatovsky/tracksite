@@ -53,9 +53,9 @@ def sighting_stats(request, template_name='tracker/stats.html'):
     morning_shifts_adult = Sighting.objects.filter(shift='AM', age='Adult').count()
     morning_shifts_juvenile = Sighting.objects.filter(shift='AM', age='Juvenile').count()
     if morning_shifts_adult > morning_shifts_juvenile:
-        age_morning_shift = 'Adults'
+        age_morning_shift = 'adults'
     else:
-        age_morning_shift = 'Juveniles'
+        age_morning_shift = 'juveniles'
 
     black_fur = int(100*round(Sighting.objects.filter(fur_color='Black').count()/all_count,2))
     gray_fur = int(100*round(Sighting.objects.filter(fur_color='Gray').count()/all_count,2))
