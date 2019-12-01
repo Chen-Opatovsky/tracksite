@@ -3,6 +3,7 @@ from django.http import HttpResponse,HttpResponseRedirect
 from django.urls import reverse, reverse_lazy
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.forms import ModelForm
+import random
 
 from .models import Sighting
 
@@ -19,7 +20,7 @@ def sighting_list(request, template_name='tracker/all.html'):
     return render(request, template_name, context)
 
 def sighting_map(request, template_name='tracker/map.html'):
-    sightings = Sighting.objects.all()[:100]
+    sightings = Sighting.objects.order_by('?')[:100]
     context = {
             'sightings' : sightings,
     }
