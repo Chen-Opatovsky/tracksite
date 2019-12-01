@@ -25,5 +25,6 @@ urlpatterns = [
     path('sightings/<slug:pk>/', views.sighting_update, name='sighting_update'),
     path('sightings/',views.sighting_list, name='sighting_list'),
     path('map/',views.sighting_map, name='sighting_map'),
+    path('stats/',views.sighting_stats, name='sighting_stats'),
     path('admin/', admin.site.urls),
 ]
