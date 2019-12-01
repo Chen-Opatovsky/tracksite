@@ -15,7 +15,7 @@ class Sighting(models.Model):
     squirrel_id = models.CharField(
             primary_key=True,
             max_length=32,
-	    help_text=_('Unique Squirrel ID'),
+	    help_text=_("Unique Squirrel ID. If the ID already exist, sighting won't be add"),
     )
 	
     AM = "AM"
@@ -34,7 +34,7 @@ class Sighting(models.Model):
     )
 	
     date = models.DateField(
-	    help_text=_("Sighting date"),
+	    help_text=_("Sighting date in YYYY-MM-DD format"),
     )
 	
     ADULT = "adult"
