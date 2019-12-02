@@ -1,5 +1,4 @@
 # Squirrel Tracker
-![alt text](https://raw.https://github.com/Chen-Opatovsky/tracksite/squirrel.jpg)
 
 Squirrel Tracker is an application to track squirrels' location, activites and behavior in Central Park, NY. 
 
