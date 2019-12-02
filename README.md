@@ -1,6 +1,6 @@
 # Squirrel Tracker
 <div align="center">
-  <img src="https://www.tensorflow.org/images/tf_logo_social.png">
+  <img src="https://search.yahoo.co.jp/image/search;_ylt=A2RCA93Ta.VdIl8Aej6U3uV7?p=squirrel+image+black+and+white&aq=-1&oq=&ei=UTF-8#mode%3Ddetail%26index%3D7%26st%3D0">
 </div>
 
 Squirrel Tracker is an application to track squirrels' location, activites and behavior in Central Park, NY. 
