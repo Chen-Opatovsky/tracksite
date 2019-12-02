@@ -2,6 +2,9 @@
 
 Squirrel Tracker is an application to track squirrels' location, activites and behavior in Central Park, NY. 
 
+!(animal-2026657_1280.png)
+
+
 ## Built with
 - Ubuntu 18.04 LTS
 - Python 3.7
