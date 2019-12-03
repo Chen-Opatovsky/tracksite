@@ -22,7 +22,7 @@ https://github.com/Chen-Opatovsky/tracksite.git
 
 # Functions 
 ## Import
-To import the data from the 2018 census file (in CSV format), you need to run the following code specifying the path to the csv file you are importing.
+To import the data from [the 2018 census file](https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw) (in CSV format), you need to run the following code specifying the path to the csv file you are importing.
 The file path should be specified at the command line after the name of the management command. 
 
 ```sh
