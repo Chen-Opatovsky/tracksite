@@ -1,7 +1,7 @@
 # Our group name and section
- Group 4, Section 1
- "UNIs: [co2445, ra3037]"
- Link to the server
+ -Group 4, Section 1
+ -"UNIs: [co2445, ra3037]"
+ -Link to the server
  [here](https://firm-camp-255414.appspot.com/)
 # Squirrel Tracker
 
