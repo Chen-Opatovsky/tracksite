@@ -1,4 +1,4 @@
-# Our group name and section
+# Group details and link to app
  - Group 4, Section 1
  - UNIs: [co2445, ra3037]
  - Link to the server
