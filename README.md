@@ -1,3 +1,8 @@
+# Our group name and section
+ Group 4, Section 1
+ "UNIs: [co2445, ra3037]"
+ Link to the server
+ [here](https://firm-camp-255414.appspot.com/)
 # Squirrel Tracker
 
 Squirrel Tracker is an application to track squirrels' location, activites and behavior in Central Park, NY. 
@@ -39,23 +44,22 @@ $ python manage.py export_squirrel_data /path/to/file.csv
 # Views
 ## Map
  - shows a map that displays the location of the squirrel sightings on an OpenStreets map.
- - The link to the map is ------
+ - The link to the map is [here](https://firm-camp-255414.appspot.com/map/)
 
 ## Sightings
  - this shows the list of all squirrel sightings with links to edit and add sightings
- - The link to  is -----
+ - The link to  is [here](https://firm-camp-255414.appspot.com/sightings/)
  
 ## Update/Delete the Sighting for specific squirrel
  - you can update the imofrmation of specific squirrel by going to the following ulr
  - you can also delate the specsific squirrel information by clicking delete button
- - The link to the uodate page is ---
  
 ## create a new sighting
  - You can also create the new sighting imformation by going to the following url and filling each section
- - The link to the creating a new sighting page is ----
+ - The link to the creating a new sighting page is [here](https://firm-camp-255414.appspot.com/sightings/add/)
  
 ## general stats
 - you can see the general statistics of the squirrel information registered in this site
-- The link to the general stats is ---
+- The link to the general stats is [here](https://firm-camp-255414.appspot.com/stats/)
 
 
