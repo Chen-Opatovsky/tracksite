@@ -48,7 +48,7 @@ $ python manage.py export_squirrel_data /path/to/file.csv
 
 ## Sightings
  - this shows the list of all squirrel sightings with links to edit and add sightings
- - The link to  is [here](https://firm-camp-255414.appspot.com/sightings/)
+ - The link to Sightings is [here](https://firm-camp-255414.appspot.com/sightings/)
  
 ## Update/Delete the Sighting for specific squirrel
  - you can update the imofrmation of specific squirrel by going to the following ulr
