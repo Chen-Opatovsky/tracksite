@@ -60,6 +60,6 @@ $ python manage.py export_squirrel_data /path/to/file.csv
  
 ## general stats
 - you can see the general statistics of the squirrel information registered in this site
-- The link to the general stats is [here](https://firm-camp-255414.appspot.com/stats/)
+- The link to the general stats is [here](https://firm-camp-255414.appspot.com/sightings/stats/)
 
 
